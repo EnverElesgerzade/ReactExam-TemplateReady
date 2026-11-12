@@ -4,6 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { FiUser } from 'react-icons/fi';
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
+import { NavLink } from 'react-router';
 
 
 const Header = () => {
@@ -39,6 +40,12 @@ const Header = () => {
             </div>
 
         </div>
+        <nav>
+            <ul className='flex items-center gap-[30px] relative left-[5%] text-[15px] font-[500]'>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/products/:id">Products</NavLink></li>
+            </ul>
+        </nav>
     </header>
   )
 }
